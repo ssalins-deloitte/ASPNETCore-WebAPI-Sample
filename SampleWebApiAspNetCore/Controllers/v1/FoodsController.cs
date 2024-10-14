@@ -59,7 +59,7 @@ namespace SampleWebApiAspNetCore.Controllers.v1
 
         [HttpGet]
         [Route("{id:int}", Name = nameof(GetSingleFoodOnly))]
-        public ActionResult GetSingleFood(ApiVersion version, int id)
+        public ActionResult GetSingleFoodOnly(ApiVersion version, int id)
         {
             FoodEntity foodItem = _foodRepository.GetSingle(id);
 
